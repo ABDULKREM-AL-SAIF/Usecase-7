@@ -88,7 +88,7 @@ elif page == "Defender":
             elif prediction['pred'] == 1:
                 prediction = "Normal Value"
                 
-            st.write(f"The Value Of The GoalKeeper : {prediction}")
+            st.write(f"The Value Of The Defender : {prediction}")
         except requests.exceptions.RequestException as e:
             st.error("Error requesting prediction from API. Please try again.")
             st.write(e)
@@ -132,7 +132,7 @@ elif page == "Midfield":
             elif prediction['pred'] == 1:
                 prediction = "Normal Value"
                 
-            st.write(f"The Value Of The GoalKeeper : {prediction}")
+            st.write(f"The Value Of The Midfield : {prediction}")
         except requests.exceptions.RequestException as e:
             st.error("Error requesting prediction from API. Please try again.")
             st.write(e)
@@ -174,7 +174,7 @@ elif page == "Attack":
             elif prediction['pred'] == 1:
                 prediction = "Normal Value"
                 
-            st.write(f"The Value Of The GoalKeeper : {prediction}")
+            st.write(f"The Value Of The Attack : {prediction}")
         except requests.exceptions.RequestException as e:
             st.error("Error requesting prediction from API. Please try again.")
             st.write(e)
